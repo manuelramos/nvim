@@ -1,8 +1,8 @@
-local lsp = require('lsp-zero')
+local lsp_zero = require('lsp-zero')
 
-lsp.preset('recommended')
+lsp_zero.preset('recommended')
 
-lsp.ensure_installed({
+lsp_zero.ensure_installed({
     'sumneko_lua',
     'tsserver',
     'eslint',
@@ -10,4 +10,13 @@ lsp.ensure_installed({
     'rust_analyzer'
 })
 
-lsp.setup()
+lsp_zero.setup()
+
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  update_in_insert = false,
+  underline = true,
+  severity_sort = false,
+  float = true,
+})
