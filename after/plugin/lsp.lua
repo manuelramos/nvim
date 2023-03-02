@@ -3,7 +3,7 @@ local lsp_zero = require('lsp-zero')
 lsp_zero.preset('recommended')
 
 lsp_zero.ensure_installed({
-    'sumneko_lua',
+    'lua_ls',
     'tsserver',
     'eslint',
     'pyright',
