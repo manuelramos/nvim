@@ -15,7 +15,9 @@ return require('packer').startup(function(use)
 
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
+    -- colorshemas
     use "sainnhe/sonokai"
+    use "NLKNguyen/papercolor-theme"
 
     use {
         'VonHeikemen/lsp-zero.nvim',
