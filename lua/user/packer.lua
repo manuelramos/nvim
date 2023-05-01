@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
     -- colorshemas
     use "sainnhe/sonokai"
     use "NLKNguyen/papercolor-theme"
+    use "https://github.com/hardhackerlabs/theme-vim.git"
+    use 'morhetz/gruvbox'
 
     use {
         'VonHeikemen/lsp-zero.nvim',
